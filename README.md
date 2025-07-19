@@ -1,69 +1,72 @@
-# React + TypeScript + Vite
+# React під контролем: Від стану до запитів
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📚 Опис проєкту
 
-Currently, two official plugins are available:
+Цей проєкт реалізує контрольовані та неконтрольовані компоненти у React, а також демонструє роботу з асинхронними запитами до сервера. Він створений для закріплення знань щодо роботи з формами, хуками `useState`, `useRef` та `useEffect`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 Структура проєкту
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+my-react-app/
+├── src/
+│   ├── components/
+│   │   ├── ControlledForm.jsx
+│   │   └── UncontrolledForm.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+├── README.md
+└── ...
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️ Як запустити проєкт локально
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Клонуйте репозиторій:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. Встановіть залежності:
+
+   ```bash
+   npm install
+   ```
+
+3. Запустіть проєкт:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Відкрийте в браузері: [http://localhost:5173](http://localhost:5173)
+
+## 🧩 Функціонал
+
+- **ControlledForm** – приклад контрольованого компонента, який використовує `useState` для керування станом форми.
+- **UncontrolledForm** – приклад неконтрольованого компонента з використанням `useRef` для доступу до значень полів.
+- **Запит до API** – при завантаженні компонента виконується запит до серверу для отримання даних (наприклад, список постів), що демонструє роботу з `useEffect`.
+
+## 🌐 Демо
+
+Посилання на розгорнутий проєкт: [https://your-project.vercel.app](https://your-project.vercel.app)
+
+## 📌 Вимоги
+
+- Node.js та npm мають бути встановлені.
+- React 18+
+- Vite
+
+## ✅ Завдання виконано згідно з критеріями:
+
+- [x] Створено контрольований та неконтрольований компоненти.
+- [x] Реалізовано асинхронний запит до серверу з обробкою станів.
+- [x] Код структурований та дотримується стандартів.
+- [x] README.md присутній.
+- [x] Проєкт розгорнуто на хостингу.
+
+## 👨‍💻 Автор
+
+Vitalii Ivanin – студент курсу з React.
