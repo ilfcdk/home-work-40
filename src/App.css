@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;            /* ключове */
+  flex-direction: column;
+  align-items: center;      /* центрує всі блоки по горизонталі */
+  text-align: center;       /* залишає текст по центру */
+}
+
+
+form {
+  margin: 2rem auto;           /* Центрування форми по горизонталі */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  border-radius: 8px;
+  box-sizing: border-box;      /* Гарантує, що padding не розширює форму */
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;                 /* Робить input 100% ширини всередині форми */
+  box-sizing: border-box;      /* Гарантує, що padding не розширить input */
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-left: 0.5rem;
+}
+
+button {
+  display: block;              /* Кнопка на новому рядку */
+  margin: 1rem auto 0 auto; /* auto по горизонталі */
+  padding: 0.5rem 1rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4b55cc;
+}
+
+.logo {
+  height: 5em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+
+
