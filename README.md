@@ -10,10 +10,10 @@
 my-react-app/
 ├── src/
 │   ├── components/
-│   │   ├── ControlledForm.jsx
-│   │   └── UncontrolledForm.jsx
-│   ├── App.jsx
-│   ├── main.jsx
+│   │   ├── ControlledForm.tsx
+│   │   └── UncontrolledForm.tsx
+│   ├── App.tsx
+│   ├── main.tsx
 │   └── index.css
 ├── package.json
 ├── README.md
@@ -51,22 +51,4 @@ my-react-app/
 
 ## 🌐 Демо
 
-Посилання на розгорнутий проєкт: [https://your-project.vercel.app](https://your-project.vercel.app)
-
-## 📌 Вимоги
-
-- Node.js та npm мають бути встановлені.
-- React 18+
-- Vite
-
-## ✅ Завдання виконано згідно з критеріями:
-
-- [x] Створено контрольований та неконтрольований компоненти.
-- [x] Реалізовано асинхронний запит до серверу з обробкою станів.
-- [x] Код структурований та дотримується стандартів.
-- [x] README.md присутній.
-- [x] Проєкт розгорнуто на хостингу.
-
-## 👨‍💻 Автор
-
-Vitalii Ivanin – студент курсу з React.
+Посилання на розгорнутий проєкт: [Vercel](https://home-work-40.vercel.app/)
